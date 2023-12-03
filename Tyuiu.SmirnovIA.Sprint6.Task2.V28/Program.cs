@@ -16,7 +16,7 @@ namespace Tyuiu.SmirnovIA.Sprint6.Task2.V28
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormMain_SIA());
         }
     }
 }

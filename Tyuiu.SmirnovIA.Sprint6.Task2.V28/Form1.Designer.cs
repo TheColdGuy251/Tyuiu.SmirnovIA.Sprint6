@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.SmirnovIA.Sprint6.Task2.V28
 {
-    partial class Form1
+    partial class FormMain_SIA
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain_SIA));
             this.buttonExecute_SIA = new System.Windows.Forms.Button();
             this.buttonHelp_SIA = new System.Windows.Forms.Button();
             this.groupBoxOutPut_SIA = new System.Windows.Forms.GroupBox();
@@ -91,18 +91,18 @@
             // 
             // chartResult_SIA
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartResult_SIA.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartResult_SIA.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chartResult_SIA.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartResult_SIA.Legends.Add(legend2);
             this.chartResult_SIA.Location = new System.Drawing.Point(176, 42);
             this.chartResult_SIA.Name = "chartResult_SIA";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.IsVisibleInLegend = false;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartResult_SIA.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.IsVisibleInLegend = false;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartResult_SIA.Series.Add(series2);
             this.chartResult_SIA.Size = new System.Drawing.Size(352, 300);
             this.chartResult_SIA.TabIndex = 3;
             this.chartResult_SIA.Text = "chart1";
@@ -212,7 +212,7 @@
             this.textBoxTask_SIA.TabIndex = 0;
             this.textBoxTask_SIA.Text = resources.GetString("textBoxTask_SIA.Text");
             // 
-            // Form1
+            // FormMain_SIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -222,7 +222,7 @@
             this.Controls.Add(this.groupBoxOutPut_SIA);
             this.Controls.Add(this.groupBoxInPut_SIA);
             this.Controls.Add(this.groupBoxTask_SIA);
-            this.Name = "Form1";
+            this.Name = "FormMain_SIA";
             this.Text = "Form1";
             this.groupBoxOutPut_SIA.ResumeLayout(false);
             this.groupBoxOutPut_SIA.PerformLayout();
