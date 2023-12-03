@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain_SIA));
             this.buttonExecute_SIA = new System.Windows.Forms.Button();
             this.buttonHelp_SIA = new System.Windows.Forms.Button();
@@ -64,6 +64,9 @@
             this.buttonExecute_SIA.Text = "Выполнить";
             this.buttonExecute_SIA.UseVisualStyleBackColor = false;
             this.buttonExecute_SIA.Click += new System.EventHandler(this.buttonExecute_SIA_Click);
+            this.buttonExecute_SIA.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonExecute_SIA_MouseDown);
+            this.buttonExecute_SIA.MouseEnter += new System.EventHandler(this.buttonExecute_SIA_MouseEnter);
+            this.buttonExecute_SIA.MouseLeave += new System.EventHandler(this.buttonExecute_SIA_MouseLeave);
             // 
             // buttonHelp_SIA
             // 
@@ -91,18 +94,18 @@
             // 
             // chartResult_SIA
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartResult_SIA.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartResult_SIA.Legends.Add(legend1);
+            chartArea6.Name = "ChartArea1";
+            this.chartResult_SIA.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chartResult_SIA.Legends.Add(legend6);
             this.chartResult_SIA.Location = new System.Drawing.Point(176, 42);
             this.chartResult_SIA.Name = "chartResult_SIA";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.IsVisibleInLegend = false;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartResult_SIA.Series.Add(series1);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series6.IsVisibleInLegend = false;
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chartResult_SIA.Series.Add(series6);
             this.chartResult_SIA.Size = new System.Drawing.Size(352, 300);
             this.chartResult_SIA.TabIndex = 3;
             this.chartResult_SIA.Text = "chart1";
@@ -216,7 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1007, 355);
+            this.ClientSize = new System.Drawing.Size(890, 355);
             this.Controls.Add(this.buttonExecute_SIA);
             this.Controls.Add(this.buttonHelp_SIA);
             this.Controls.Add(this.groupBoxOutPut_SIA);

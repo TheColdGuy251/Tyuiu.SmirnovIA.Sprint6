@@ -53,5 +53,20 @@ namespace Tyuiu.SmirnovIA.Sprint6.Task2.V28
         {
             MessageBox.Show("Таск 2 выполнил студент группы ИИПб-23-3 Смирнов Илья Алексеевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void buttonExecute_SIA_MouseEnter(object sender, EventArgs e)
+        {
+            buttonExecute_SIA.BackColor = Color.Red;
+        }
+
+        private void buttonExecute_SIA_MouseLeave(object sender, EventArgs e)
+        {
+            buttonExecute_SIA.BackColor = Color.Green;
+        }
+
+        private void buttonExecute_SIA_MouseDown(object sender, MouseEventArgs e)
+        {
+            buttonExecute_SIA.BackColor = Color.Blue;
+        }
     }
 }
